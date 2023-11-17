@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('fondo.jpg'); 
+    background-image: url('..\Fotos\fondo.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ header h1 {
 
 header img {
    width: 100%;
-    max-height: 300px; /* Ajusta la altura máxima  */
+    max-height: 150px; /* Ajusta la altura máxima  */
     height: auto;
     display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente */
