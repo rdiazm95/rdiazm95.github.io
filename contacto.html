@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Contacto</title>
+</head>
+<body>
+     <header>
+        <img src="contacto.jpg" alt="Tu Foto">
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info_personal.html">Información Personal</a></li>
+            <li><a href="info_academica.html">Formación Académica</a></li>
+            <li><a href="experiencia.html">Experiencia Laboral</a></li>
+            <li><a href="otros.html">Otra información</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="procesar_formulario.php" method="post">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Introduce el nombre">
+            </div>
+
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Introduce el correo electrónico">
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Introduce el mensaje"></textarea>
+            </div>
+
+            <div>
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo">
+                    <option value="consulta">Consulta</option>
+                    <option value="oferta">Oferta Laboral</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Preferencias de contacto:</label>
+                <input type="radio" id="medio_email" name="preferencias_contacto" value="email" checked>Correo electrónico
+                <input type="radio" id="medio_tel" name="preferencias_contacto" value="tel">Teléfono
+            </div>
+
+            <div>
+                <input type="checkbox" id="acepta_condiciones" name="acepta_condiciones"> Acepta las condiciones de uso
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </section>
+   <footer>
+        <p>&copy; 2023 - Mi Currículum Vitae | <a href="contacto.html">Contáctame</a></p>
+    </footer>
+</body>
+</html>
